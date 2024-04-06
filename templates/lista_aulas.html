@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Olá, pessoal do MJD 2024</title>
+    </head>
+    <body>
+        <h1>Lista de aulas</h1>
+        <p>
+            Estas são as disciplinas do MJD003:
+        </p>
+        <ul>
+            {% for disciplina in disciplinas %}
+            <li><a href="/gravacoes/{{disciplina.zoom_id}}">{{disciplina.nome}}</a></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>

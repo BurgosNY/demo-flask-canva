@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Olá, pessoal do MJD 2024</title>
+    </head>
+    <body>
+        <h1>Lista de Gravações da disciplina {{gravacoes[0].disciplina}}:</h1>
+        <p>
+            Estas são as gravações da disciplina {{gravacoes[0].disciplina}}
+        </p>
+        <ul>
+            {% for gravacao in gravacoes %}
+            <li><a href="{{gravacao.download_url}}">Baixar aula de {{gravacao.data_str}}</a></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
